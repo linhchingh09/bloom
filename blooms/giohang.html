@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOOMS</title>
+    <link rel="stylesheet" href="./css/giohang.css">
+    <script src="./js/giohang.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="header">
+        <div class="si-cart">
+            <div class="sign-in">
+                <a href="sign-in.html">Sign In</a> <a href="sign-up.html">/ Sign Up</a>
+                <p class="welcome">Welcome to Blooms</p>
+            </div>
+            <div class="cart">
+                <a href="" onmouseover="appear()" onmouseleave="disappear()">
+                    <i class="fa-solid fa-cart-shopping fa-bounce" style="color: #ff528e;"></i>
+                </a>
+                <div class="cart-product" onmouseover="appear()" onmouseleave="disappear()">
+                    <img id="empty" src="./images/emptycart.png" alt="">
+                    <!-- <div class="title">Added to cart</div>
+                    <div class="added">
+                        <div class="product">
+                            <img src="./images/Băng đô bông 30k.jpg" alt="">
+                            <p class="name">Băng đô bông</p>
+                            <p class="price">30.000₫</p>
+                        </div>
+                        <div class="purchase">
+                            <p class="exceed"></p>
+                            <div class="infor">
+                                <button onclick="infor()">Purchase</button>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <img class="blossom" src="./images/anhdao.png" alt="">
+    </div>
+    <div class="topnav " id="myTopnav">
+        <a href="trangchu.html">Home</a>
+        <a href="tuthien.html">Donate</a>
+        <a href="giohang.html" class="active">Categories</a>
+        <a href="lienhe.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
+
+    <div class="slideshow">
+        <div class="mySlides fade">
+            <img src="./images/NR1.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/NR2.png" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./images/NR3.png" style="width:100%">
+        </div>
+        <h1> NEW ARRIVALS </h1>
+    </div>
+
+    <div class="heading">
+        <h1>˚₊‧✩ Bestsellers ✩‧₊˚</h1>
+    </div>
+    <div class="bestseller">
+        <div class="bs">
+            <img src="./images/vn-11134207-7qukw-lg2lg2rog50q08.jpg" alt="">
+            <h3>Bút Gel xóa được MOKA</h3>
+            <h3>35.000₫</h3>
+            <button onclick="addToCart('./images/vn-11134207-7qukw-lg2lg2rog50q08.jpg','Bút Gel xóa được MOKA','35.000₫')">Add to cart</button>
+        </div>
+        <div class="bs">
+            <img src="./images/20231116_IPNgOGtR00 (1).jpeg" alt="">
+            <h3>Set kẹp tóc trái tim (6c)</h3>
+            <h3>22.000₫</h3>
+            <button onclick="addToCart('./images/20231116_IPNgOGtR00 (1).jpeg','Set kẹp tóc trái tim (6c)','22.000₫')">Add to cart</button>
+        </div>
+        <div class="bs">
+            <img src="./images/20240223_SdxQJvPbzS.jpeg" alt="">
+            <h3>Băng đô bông Loopy</h3>
+            <h3>35.000₫</h3>
+            <button onclick="addToCart('./images/20240223_SdxQJvPbzS.jpeg','Băng đô bông Loopy','35.000₫')">Add to cart</button>
+        </div>
+    </div>
+    <div class="heading">
+        <h1>♡˚ Stationery ˚♡</h1>
+    </div>
+    <div class="products">
+        <div class="st">
+            <img src="./images/but_tay.jpg" alt="">
+            <h4>Bút tẩy</h4>
+            <h4>15.000₫</h4>
+            <button onclick="addToCart('./images/Bút tẩy 15k.jpg','Bút tẩy','15.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/con_ca.jpg" alt="">
+            <h4>Hộp bút con cá</h4>
+            <h4>45.000₫</h4>
+            <button onclick="addToCart('./images/Hộp bút con cá 50k.jpg','Hộp bút con cá','45.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/nhan_dan.jpg" alt="">
+            <h4>Nhãn dán Goo trong suốt</h4>
+            <h4>10.000₫</h4>
+            <button onclick="addToCart('./images/Nhãn Dán Goo Trong Suốt 10k.jpg','Nhãn dán Goo trong suốt','10.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/but_chi.jpg" alt="">
+            <h4>Bút chì lỗ HB </h4>
+            <h4>5.000₫</h4>
+            <button onclick="addToCart('./images/Bút chì lỗ HB 5k.jpg','Bút chì lỗ HB','5.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/6_but.jpg" alt="">
+            <h4>Set 6 Bút đánh dấu</h4>
+            <h4>25.000₫</h4>
+            <button onclick="addToCart('./images/Set 6 Bút Đánh Dấu 25k.jpg','Set 6 Bút đánh dấu','25.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/80_ghi_chu.jpg" alt="">
+            <h4>Set 80 Giấy ghi chú</h4>
+            <h4>15.000₫</h4>
+            <button onclick="addToCart('./images/Set 80 giấy ghi chú 15k.jpg','Set 80 Giấy ghi chú','15.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/ngoi_chi.jpg" alt="">
+            <h4>Hộp 200 ngòi ruột bút chì 0.5/0.7mm</h4>
+            <h4>20.000₫</h4>
+            <button onclick="addToCart('z./images/Hộp 200 ngòi ruột bút chì 0.5-0.7mm 20k.jpg','Hộp 200 ngòi ruột bút chì 0.5/0.7mm','20.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/but_loopy.jpg" alt="">
+            <h4>Bút mực đen Loopy (4c)</h4>
+            <h4>38.000₫</h4>
+            <button onclick="addToCart('./images/Bút mực đen Loopy (4c) 38k.jpg','Bút mực đen Loopy (4c)','38.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/ke_vuong.jpg" alt="">
+            <h4>Sổ kẻ vuông 200 trang</h4>
+            <h4>25.000₫</h4>
+            <button onclick="addToCart('./images/Sổ kẻ vuông 200 trang 25k.jpg','Sổ kẻ vuông 200 trang','25.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/so_a5.jpg" alt="">
+            <h4>Sổ tay cỡ A5 bìa Kraft</h4>
+            <h4>30.000₫</h4>
+            <button onclick="addToCart('./images/Sổ tay cỡ A5 bìa Kraft 30k.jpg','Sổ tay cỡ A5 bìa Kraft','30.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/hop_but_lon.jpg" alt="">
+            <h4>Hộp bút lớn</h4>
+            <h4>65.000₫</h4>
+            <button onclick="addToCart('./images/Hộp bút lớn 65k.jpg','Hộp bút lớn','65.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/but_danh_dau.jpg" alt="">
+            <h4>Bút đánh dấu Gradient</h4>
+            <h4>25.000₫</h4>
+            <button onclick="addToCart('./images/Bút Đánh Dấu Màu Gradient 25k.jpg','Bút đánh dấu Gradient','25.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/ke_ngang.jpg" alt="">
+            <h4>Sổ tay A7 kẻ ngang</h4>
+            <h4>35.000₫</h4>
+            <button onclick="addToCart('./images/Sổ tay A7 kẻ ngang 35k.jpg','Sổ tay A7 kẻ ngang','35.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/but_xoa.jpg" alt="">
+            <h4>Bút xóa kéo dạng bấm</h4>
+            <h4>30.000₫</h4>
+            <button onclick="addToCart('./images/Bút xóa kéo dạng bấm 30k (2).jpg','Bút xóa kéo dạng bấm','30.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/sticker_retro.jpg" alt="">
+            <h4>Set 50 Sticker Retro</h4>
+            <h4>25.000₫</h4>
+            <button onclick="addToCart('./images/Set 50 Sticker Retro 25k.jpg','Set 50 Sticker Retro','25.000₫')">Add to cart</button>
+        </div>
+    </div>
+    <div class="heading">
+        <h1>⋆୨୧˚ Accessories ˚୨୧⋆</h1>
+    </div>
+    <div class="products">
+        <div class="st">
+            <img src="./images/bom.jpg" alt="">
+            <h4>Bờm tóc hồng</h4>
+            <h4>20.000₫</h4>
+            <button onclick="addToCart('./images/Bờm tóc hồng 20k.jpg','Bờm tóc hồng','20.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/bang_do_bong.jpg" alt="">
+            <h4>Băng đô bông</h4>
+            <h4>30.000₫</h4>
+            <button onclick="addToCart('./images/Băng đô bông 30k.jpg','Băng đô bông','30.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/bang_do_xuc_xich.jpg" alt="">
+            <h4>Băng đô xúc xích</h4>
+            <h4>30.000₫</h4>
+            <button onclick="addToCart('./images/Băng đô xúc xích 30k.jpg','Băng đô xúc xích','30.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/scrunchies_hq.jpg" alt="">
+            <h4>Scrunchies bông Hàn Quốc</h4>
+            <h4>25.000₫</h4>
+            <button onclick="addToCart('./images/Scrunchies bông Hàn Quốc 25k.jpg','Scrunchies bông Hàn Quốc','25.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/don_sac.jpg" alt="">
+            <h4>Scrunchies đơn sắc</h4>
+            <h4>10.000₫</h4>
+            <button onclick="addToCart('./images/Scrunchies đơn sắc 10k.jpg','Scrunchies đơn sắc','10.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/gon_song.jpg" alt="">
+            <h4> Kẹp tóc gợn sóng</h4>
+            <h4>20.000₫</h4>
+            <button onclick="addToCart('./images/Kẹp tóc gợn sóng 20k.jpg','Kẹp tóc gợn sóng','20.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/gon_song.jpg" alt="">
+            <h4>Kẹp tóc hoa sứ</h4>
+            <h4>25.000₫</h4>
+            <button onclick="addToCart('./images/Kẹp tóc hoa sứ 25k.jpg','Kẹp tóc hoa sứ','25.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/HQ.jpg" alt="">
+            <h4>Kẹp tóc Hàn Quốc</h4>
+            <h4>15.000₫</h4>
+            <button onclick="addToCart('./images/Kẹp tóc Hàn Quốc 15k.jpg','Kẹp tóc Hàn Quốc','15.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/ngoi_sao.jpg" alt="">
+            <h4>Kẹp tóc ngôi sao (5c)</h4>
+            <h4>10.000₫</h4>
+            <button onclick="addToCart('./images/Kẹp tóc ngôi sao (5c) 10k.jpg','Kẹp tóc ngôi sao (5c)','10.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/kim_loai.jpg" alt="">
+            <h4>Kẹp tóc kim loại đính đá</h4>
+            <h4>10.000₫</h4>
+            <button onclick="addToCart('./images/Kẹp tóc kim loại đính đá 10k.jpg','Kẹp tóc kim loại đính đá','10.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/dinh_da.jpg" alt="">
+            <h4>Khuyên tai đính đá hồng</h4>
+            <h4>25.000₫</h4>
+            <button onclick="addToCart('./images/Khuyên tai đính đá hồng 25k.jpg','Khuyên tai đính đá hồng','25.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/kt_trong_suot.jpg" alt="">
+            <h4>Set 10 khuyên tai hồng </h4>
+            <h4>25.000₫</h4>
+            <button onclick="addToCart('./images/Set khuyên tai hồng trong suốt 25k.jpg','Set 10 khuyên tai hồng','25.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/nhan_trai_tim.jpg" alt="">
+            <h4>Nhẫn trái tim đính pha lê</h4>
+            <h4>20.000₫</h4>
+            <button onclick="addToCart('./images/Nhẫn trái tim đính pha lê 20k.jpg','Nhẫn trái tim đính pha lê','20.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/day_chuyen.jpg" alt="">
+            <h4>Dây chuyền trái tim</h4>
+            <h4>25.000₫</h4>
+            <button onclick="addToCart('./images/Dây chuyền trái tim 25k.jpg','Dây chuyền trái tim','25.000₫')">Add to cart</button>
+        </div>
+        <div class="st">
+            <img src="./images/hologram.jpg" alt="">
+            <h4>Vòng tay Hologram</h4>
+            <h4>45.000₫</h4>
+            <button onclick="addToCart('./images/Vòng tay Hologram 45k.jpg','Vòng tay Hologram','45.000₫')">Add to cart</button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: rgb(248, 198, 213);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+form {
+    align-items: center;
+}
+
+.anhdao {
+    position: absolute;
+    height: 23%;
+    top: -5px;
+    right: 10px;
+}
+
+#grad1 {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, rgb(253, 226, 239), rgb(255, 74, 162));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+
+    width: 27vw;
+    padding: 25px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+
+}
+
+fieldset input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#name {
+    margin-top: 25px;
+}
+
+.password {
+    position: relative;
+}
+
+.password a {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    color: lightpink;
+}
+
+.submit {
+    display: block;
+    text-decoration: none;
+    color: azure;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgb(249, 201, 208);
+    font-weight: bold;
+}
+
+.forget {
+    display: block;
+    text-decoration: none;
+    margin-top: 10px;
+    color: grey;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.line {
+    content: "";
+    background-color: grey;
+    width: 50%;
+    height: 1px;
+}
+
+span {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: grey;
+}
+
+.alternative {
+    display: flex;
+    justify-content: space-around;
+}
+
+.alternative a {
+    background-color: rgb(255, 227, 237);
+    width: 35%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.facebook i {
+    color: rgb(108, 126, 216);
+}
+
+.facebook p {
+    color: rgb(108, 126, 216);
+
+}
+
+.google i {
+    color: rgb(231, 125, 125);
+}
+
+.google p {
+    color: rgb(231, 125, 125);
+}
+
+.sign-up {
+    margin-top: 15px;
+    font-size: 15px;
+    display: inline-block;
+    color: rgb(253, 143, 187);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 1500px) {
+    fieldset {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    fieldset {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    fieldset {
+        width: 68vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    fieldset {
+        width: 78vw;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    fieldset {
+        width: 70vw;
+        font-size: 10px;
+
+    }
+}

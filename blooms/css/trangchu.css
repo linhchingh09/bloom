@@ -1,0 +1,704 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.header{
+    height: 23vh;
+    background-color: rgb(255, 225, 236) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.blossom{
+    height: 22vh;
+    position: absolute;
+    left:50%;
+    top: 18px;
+}
+
+.si-cart{
+    position: absolute;
+    display: flex;
+    top: 0px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.si-cart p{
+    font-weight: 700;
+    color: rgb(250, 165, 196);
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    top: 3;  
+    left: 48%;
+}
+
+.sign-in a{
+    color: rgb(255, 131, 197);
+    text-decoration: none;
+    
+}
+.cart{
+    position: relative;
+    
+}
+
+.cart-product{
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 10;
+    display: none;
+}
+
+.cart-product img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    border: 1px solid rgb(205, 205, 205);
+    
+}
+
+.topnav {
+    background-color: rgb(255, 251, 239);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.topnav a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    float: left;
+    text-align: center;
+    color: rgb(253, 146, 198);
+}
+
+.topnav a:hover{
+    background-color: rgb(253, 146, 198);
+    color: rgb(255, 251, 239);
+}
+
+.topnav a.active{
+    background-color: lightpink ;
+    color: white;
+}
+
+.topnav a.icon{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+
+    .topnav a:not(:first-child){
+       display: none;
+    }
+    .topnav a.icon{
+        display: block;
+        float: right;
+    }
+
+    .topnav.responsive{
+        position: relative;
+        position: sticky;
+    }
+
+    .topnav.responsive a.icon{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .topnav.responsive a{
+        display: block;
+        float: none;
+        text-align: left;
+    }
+}
+
+.home{
+    font-family: 'Lora'
+}
+
+
+#flex1{
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.flex button{
+     padding: 10px;
+     border: 0px;
+     border-radius: 5px;
+     background-color: lightpink;
+     display: block;
+     margin: auto; 
+     margin-top: 40px;
+     font-family: cursive;
+}
+
+button:hover{
+    transition: 0.5s;
+    background-color: white;  
+}
+
+button a:hover{
+    transition: 0.5s;
+    color: lightpink;  
+}
+
+
+.flex a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+
+#flex1 h1{
+    margin-top: 50px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 220, 239);
+    font-size: 40px;
+    font-weight:900;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.flex p{
+    font-size: 17px;
+}
+
+
+.mySlides {
+    width: 100%;
+    position: relative;
+  }
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+.slideshow img{
+    height: 55vh ;
+ }
+
+.img-p{
+    margin-top:30px ;
+    display: flex;
+ }
+
+
+.img-p img{
+    width: 30%;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    margin-right: 15px;
+}
+
+.bohoc{
+    margin: 30px;
+    width: 45vw;
+    margin-right: 10px;
+}
+
+.langthang{
+    margin: 30px 60px 30px 20px;
+    
+}
+
+.langthang h4{
+    text-align: left;
+    margin-bottom: 10px;
+   
+}
+
+.tre{
+    margin-top: -35px;
+    margin-bottom: 10px;
+}
+
+.img-p b {
+    font-size: 20px;
+    color: rgb(255, 86, 125);
+}
+
+.img-p p:nth-child(6) b {
+    font-size: 25px;
+    color: rgb(194, 18, 18);
+}
+
+.img-p p:last-child{
+     text-align:right ;
+     margin-right: 15px;
+}
+
+.img-p h2{
+    text-align:left ;
+    margin-bottom: 10px;
+}
+
+.ccs{
+    margin: 0px 0px 20px 0px;
+    font-size: 20px;
+    align-items: left;
+}
+
+.ccs b{
+    font-size: 25px;
+    color: rgb(194, 18, 18);
+}
+
+
+#flex2{
+    text-align: left;
+    position: relative;
+}
+
+.nuoiem h1{  
+    margin-left: 10px;
+    padding: 10px 5px 5px 20px;
+    display: inline-block;
+    border-bottom: 1px solid rgb(167, 167, 167);
+}
+
+
+.nuoiem img{
+    position: absolute;
+    height: 25vh;
+    right: 15px;
+    top: -60px;
+}
+
+.container h3{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.container p{
+    text-align: center;
+    font-size: 15px;
+    margin: 10px 15px 0px 15px;
+}
+
+.den, .mlan, .aoam{
+    width: 23vw;
+    padding-bottom: 40px;
+    background-color: rgb(255, 247, 236);
+    margin-top: 30px;
+    border-radius: 10px;
+    padding-top: 25px;
+}
+
+.den img, .mlan img, .aoam img{
+    width: 75%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+
+}
+
+#flex3{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
+    margin: auto;
+    margin-top: 90px;
+}
+
+#flex3 p{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px ;
+}
+
+
+#flex4{
+    padding: 50px 50px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+
+.grad1{
+
+    background-image: linear-gradient(rgb(255, 255, 239), rgb(255, 225, 241),rgb(255, 197, 221),rgb(255, 81, 154),rgb(223, 136, 255),antiquewhite);
+}
+
+
+.icons a i{
+    margin-top: 10px;
+    margin-right: 5px;
+    font-size: 25px;
+    color: rgb(192, 124, 255);
+}
+
+@media screen and (max-width: 1280px) {
+    .sign-in p{
+     font-size: 20px;
+     left: 40%;
+    }
+ 
+    .nuoiem img{
+     height: 30%;
+     top: -65px;
+    } 
+ 
+    .blossom{
+     left: 45%;
+    }
+ 
+    .ccs{
+     margin: 30px 15px 0px 15px;
+    }
+ }
+
+@media screen and (max-width: 1110px) {
+   .sign-in p{
+    font-size: 20px;
+    left: 33%;
+   }
+
+   .nuoiem img{
+    height: 30%;
+    top: -65px;
+   } 
+
+   .blossom{
+    left: 37%;
+   }
+
+   .ccs{
+    margin: 30px 15px 0px 15px;
+   }
+}
+
+@media screen and (height: 600px) {
+    .blossom{
+     left: 45%;
+    }
+
+    .sign-in p{
+        font-size: 20px;
+        left:40%;
+       }
+ }
+
+@media screen and (min-width: 820px) and (max-width:1023px)  {
+    .img-p img{
+        height: 20%;
+     }
+
+     .langthang{
+        width: 50%;
+     }
+
+     .ccs{
+        margin-top: 20px;
+     }
+
+     .sign-in p{
+        font-size: 25px;
+        left: 37%;
+       }
+    
+       .blossom{
+        left: 38%;
+       }
+}
+
+@media screen and (max-width: 700px) {
+    .sign-in a{
+        font-size: 15px;
+    }
+
+    .sign-in p{
+        font-size: 20px;
+        left: 28%;
+    }
+
+    .blossom{
+        left: 35%;
+    }
+    
+    .img-p img{
+        width: 20%;
+    }
+
+    .img-p{
+       flex-direction: column;
+    }
+
+    .bohoc {
+        width: 80%;
+    }
+    
+    .langthang{
+        margin-left: 30px;
+        width: 80%;
+    }
+
+    .img-p img{
+        margin: auto;
+        width: 50%;
+    }
+
+    .ccs{
+        font-size: 18px;
+    }
+
+    #flex1{
+        margin-bottom: 200px;
+    }
+
+    .nuoiem img{
+        height: 10%;
+        right: -1px;
+        top: -35px;
+    }
+
+    .nuoiem h1{
+        font-size: 30px;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container div{
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .sign-in a{
+        font-size: 10px;
+    }
+
+    .sign-in p{
+        font-size: 20px;
+        left: 28%;
+    }
+
+    .blossom{
+        left: 30%;
+    }
+    
+    .img-p img{
+        width: 20%;
+    }
+
+    .img-p{
+       flex-direction: column;
+    }
+
+    .bohoc {
+        width: 80%;
+    }
+    
+    .langthang{
+        margin-left: 30px;
+        width: 80%;
+    }
+
+    .img-p img{
+        margin: auto;
+        width: 50%;
+    }
+
+    .ccs{
+        font-size: 18px;
+    }
+
+    #flex1{
+        margin-bottom: 200px;
+    }
+
+    .nuoiem img{
+        height: 10%;
+        right: -1px;
+        top: -35px;
+    }
+
+    .nuoiem h1{
+        font-size: 30px;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container div{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .sign-in a{
+        font-size: 10px;
+    }
+
+    .sign-in p{
+        font-size: 15px;
+        left: 28%;
+    }
+
+    .blossom{
+        left: 30%;
+    }
+    
+    .img-p img{
+        width: 20%;
+    }
+
+    .img-p{
+       flex-direction: column;
+    }
+
+    .bohoc {
+        width: 80%;
+    }
+    
+    .langthang{
+        margin-left: 30px;
+        width: 80%;
+    }
+
+    .img-p img{
+        margin: auto;
+        width: 50%;
+    }
+
+    .ccs{
+        font-size: 18px;
+    }
+
+    #flex1{
+        margin-bottom: 200px;
+    }
+
+    .nuoiem img{
+        height: 6%;
+        right: 0px;
+        top: -5px;
+    }
+
+    .nuoiem h1{
+        font-size: 27px;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container div{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .sign-in a{
+        font-size: 7px;
+    }
+
+    .sign-in p{
+        font-size: 10px;
+        left: 35%;
+    }
+
+    .blossom{
+        left: 30%;
+    }
+    
+    .img-p img{
+        width: 20%;
+    }
+
+    .img-p{
+       flex-direction: column;
+    }
+
+    .bohoc {
+        width: 80%;
+    }
+    
+    .langthang{
+        margin-left: 30px;
+        width: 80%;
+    }
+
+    .img-p img{
+        margin: auto;
+        width: 50%;
+    }
+
+    .ccs{
+        font-size: 18px;
+    }
+
+    #flex1{
+        margin-bottom: 200px;
+    }
+
+    .nuoiem img{
+        height: 0%;
+    }
+
+    .nuoiem h1{
+        font-size: 27px;
+    }
+
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container div{
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

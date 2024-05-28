@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-image: linear-gradient( rgb(254, 254, 231),rgb(254, 254, 231),rgb(255, 216, 232), rgb(255, 202, 223),rgb(255, 164, 200));
+} */
+
+body{
+    background-image: linear-gradient( rgb(254, 254, 231), rgb(253, 143, 187));
+}
+
+.header{
+    height: 23vh;
+    background-color: rgb(255, 225, 236) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.blossom{
+    height: 22vh;
+    position: absolute;
+    left:46%;
+    top: 18px;
+}
+
+.si-cart{
+    position: absolute;
+    display: flex;
+    top: 0px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.welcome{
+    font-weight: 900;
+    font-size: 17px;
+    color: rgb(250, 165, 196);
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    top: 3;  
+    left: 43%;
+}
+
+.sign-in a{
+    color: rgb(255, 131, 197);
+    text-decoration: none;
+    
+}
+.cart{
+    position: relative;
+    
+}
+
+.cart i{
+    z-index: 25;
+}
+
+.cart-product{
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 10;
+    background-color: rgb(253, 247, 249);
+    border-radius: 5px;
+    border: 1px solid rgb(205, 205, 205);
+    display: none;
+}
+
+.cart-product img{
+    width: 25%;
+    border-radius: 5px;
+    border: 2px solid lightpink;
+}
+
+.topnav {
+    background-color: rgb(255, 251, 239);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.topnav a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    float: left;
+    text-align: center;
+    color: rgb(253, 146, 198);
+}
+
+.topnav a:hover{
+    background-color: rgb(253, 146, 198);
+    color: rgb(255, 251, 239);
+}
+
+.topnav a.active{
+    background-color: lightpink ;
+    color: white;
+}
+
+.topnav a.icon{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+
+    .topnav a:not(:nth-child(2)){
+       display: none;
+    }
+    .topnav a.icon{
+        display: block;
+        float: right;
+    }
+
+    .topnav.responsive{
+        position: relative;
+        position: sticky;
+    }
+
+    .topnav.responsive a.icon{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .topnav.responsive a{
+        display: block;
+        float: none;
+        text-align: left;
+    }
+}
+
+.heading h1{
+    text-align: center;
+    font-family:cursive;
+    color:rgb(253, 143, 187) ;
+    margin: 30px;
+    font-size: 40px;
+}
+
+.donate{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.prj{
+    width: 22%;
+    background-color: rgb(255, 246, 234);
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 40px;
+    border-radius: 8px;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+}
+
+.prj img{
+    width: 90%;
+    border-radius: 5px;
+    margin-top: 15px;
+    border: 2px solid lightpink;
+}
+
+.prj h2{
+    padding: 10px;
+    color: lightpink;
+}
+
+.prj p{
+    margin-bottom: 30px;
+}
+
+.prj a{
+    text-decoration: none;
+    padding: 10px 50px 10px 50px;
+    background-color: lightpink;
+    border-radius: 5px;
+    color: white;
+}
+
+@media screen and (max-width: 950px) {
+    .si-cart p{
+        left: 40%;
+    }
+    .blossom{
+        left: 38%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .blossom{
+        left: 40%;
+    }
+    .prj{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .slideshow h1{
+        font-size: 55px;
+    }
+    .prj{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .si-cart a{
+        font-size: 10px;
+    }
+    .si-cart p{
+        font-size: 13px;
+        left: 35%;
+    }
+    .blossom{
+        left: 35%;
+    }
+    .prj{
+        width: 60%;
+    }
+}

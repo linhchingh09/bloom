@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+}
+
+.grad1 {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, rgb(254, 254, 231), rgb(253, 143, 187));
+}
+
+.img {
+    height: 70vh;
+}
+
+.pink {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.anhdao {
+    position: absolute;
+    height: 20%;
+    top: -3px;
+    right: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+fieldset {
+    background-color: rgb(254, 254, 231);
+    height: 70vh;
+    border: 0;
+    border-radius: 10px 10px 10px 10px;
+    position: relative;
+    display: flex;
+}
+
+.text {
+    padding: 20px;
+    padding-top: 25px;
+    width: 35vw;
+}
+
+h1 {
+    margin-bottom: 30px;
+
+}
+
+.eyes i {
+    position: absolute;
+    top: 139px;
+    right: 29px;
+    color: #ffaece;
+}
+
+.password2 i {
+    position: absolute;
+    right: 29px;
+    top: 177px;
+    color: #ffaece;
+}
+
+
+input {
+    padding: 7px;
+    margin-top: 5px;
+    display: block;
+    width: 100%;
+}
+
+
+
+#checkbox {
+    width: 5%;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+.submit {
+    display: block;
+    text-decoration: none;
+    color: azure;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffaece;
+    font-weight: bold;
+    width: 100%;
+    border: 0px;
+}
+
+.sign-in {
+    margin-top: 15px;
+    
+    display: inline-block;
+    color: rgb(253, 143, 187);
+    font-weight: bold;
+}
+
+span {
+    color: grey;
+}
+
+
+
+@media screen and (max-width: 1300px) {
+    fieldset {
+        width: 80vw;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+    .text {
+        width: 50%;
+    }
+
+    .anhdao {
+        height:17%;
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    fieldset {
+        width: 80vw;
+    }
+    
+    .img {
+        width: 40%;
+    }
+
+    .text {
+        width: 60%;
+    }
+
+    .anhdao {
+        height:25%;
+        top: -3px;
+       
+    }
+}
+
+
+
+@media screen and (max-width: 750px) {
+    fieldset {
+        width: 80vw;
+        height: 60vh;
+    }
+    
+    .img {
+        width: 0%;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .anhdao {
+        height:20%;
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    fieldset {
+        width: 78vw;
+    }
+    .anhdao {
+        height:20%;
+        top: 0px;
+    }
+}
+
+
+
+@media screen and (max-width: 300px) {
+    fieldset {
+        width: 70vw;
+        
+    }
+    .img {
+        width: 0%;
+    }
+
+    .text {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .anhdao {
+        height:17%;
+        top: 3px;
+    }
+    .eyes i {
+        top: 130px;
+    }
+    
+    .password2 i {
+        top: 168px;
+    }
+
+}

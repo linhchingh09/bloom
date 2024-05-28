@@ -1,0 +1,142 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightpink;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.anhdao {
+    position: absolute;
+    height: 18%;
+    top: -8px;
+    right: 10px;
+}
+
+
+fieldset {
+    width: 27vw;
+    padding: 25px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: white;
+    margin: auto;
+    position: relative;
+
+}
+
+
+
+fieldset input {
+    width: 100%;
+    margin-top: 10px;
+    padding: 8px;
+}
+
+#name {
+    margin-top: 25px;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px;
+}
+
+.line {
+    background-color: grey;
+    width: 50%;
+    height: 1px;
+}
+
+span {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: grey;
+}
+
+.acc p{
+    text-align: center;
+    font-size: 13px;
+    color: grey;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.acc img{
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    border: 0;
+    border-radius:5px;
+    padding: 10px;
+    width: 100%;
+    display: block;
+    margin:auto;
+    margin-top: 20px;
+    background-color: lightpink ;
+    color:white;
+    font-size: 15px;
+    font-family: cursive;
+}
+
+.back{
+    font-size: 15px;
+    color: rgb(36, 30, 30);
+    text-align: right;
+
+}
+.back a { 
+color: lightpink;
+text-align: right;
+margin-right: 5px;
+}
+
+@media screen and (min-width: 1500px) {
+    fieldset {
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    fieldset {
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    fieldset {
+        width: 60vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    fieldset {
+        width: 78vw;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+    fieldset {
+        width: 70vw;
+        font-size: 10px;
+
+    }
+}

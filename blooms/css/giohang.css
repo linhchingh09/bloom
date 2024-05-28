@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    background-image: linear-gradient( rgb(255, 255, 255),rgb(255, 154, 199));
+} */
+
+
+.header{
+    height: 23vh;
+    background-color: rgb(255, 225, 236) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.blossom{
+    height: 22vh;
+    position: absolute;
+    left:46%;
+    top: 18px;
+}
+
+.si-cart{
+    position: absolute;
+    display: flex;
+    top: 0px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.welcome{
+    font-weight: 900;
+    font-size: 17px;
+    color: rgb(250, 165, 196);
+    text-transform: uppercase;
+    display: inline-block;
+    position: absolute;
+    top: 3;  
+    left: 43%;
+}
+
+.sign-in a{
+    color: rgb(255, 131, 197);
+    text-decoration: none;
+    
+}
+.cart{
+    position: relative;
+    
+}
+
+.cart i{
+    z-index: 25;
+}
+
+.cart-product{
+    width: 20vw;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    z-index: 10;
+    background-color: rgb(253, 247, 249);
+    border-radius: 5px;
+    border: 1px solid rgb(205, 205, 205);
+    display: none;
+}
+
+.cart-product img{
+    width: 25%;
+    border-radius: 5px;
+    border: 2px solid lightpink;
+}
+
+
+
+.title{
+    width: 100%;
+    padding: 10px;
+}
+
+#empty{
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(205, 205, 205);
+}
+
+.added{
+    margin-top: 20px;
+}
+
+.added p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+.product{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    
+}
+
+.purchase{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.infor{
+    text-align: center;
+}
+.topnav {
+    background-color: rgb(255, 251, 239);
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 5;
+}
+
+.topnav a{
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    float: left;
+    text-align: center;
+    color: rgb(253, 146, 198);
+}
+
+.topnav a:hover{
+    background-color: rgb(253, 146, 198);
+    color: rgb(255, 251, 239);
+}
+
+.topnav a.active{
+    background-color: lightpink ;
+    color: white;
+}
+
+.topnav a.icon{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+
+    .topnav a:not(:nth-child(3)){
+       display: none;
+    }
+    .topnav a.icon{
+        display: block;
+        float: right;
+    }
+
+    .topnav.responsive{
+        position: relative;
+        position: sticky;
+    }
+
+    .topnav.responsive a.icon{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .topnav.responsive a{
+        display: block;
+        float: none;
+        text-align: left;
+    }
+}
+
+.mySlides {
+    width: 100%;
+    position: relative;
+  }
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+.slideshow img{
+    opacity: 0.5;
+    height: 55vh ;
+ }
+
+
+.slideshow h1{
+    font-family: 'Lora';
+    margin-top: 50px;
+    text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 141, 188);
+    font-size: 60px;
+    text-shadow: 4px 2px 4px  #ffbfe2;
+    display: inline-block;
+    text-align: center;
+}
+
+.heading h1{
+    background-color: lightpink;
+    color: white;
+    border-radius: 5px;
+    margin: 15px 15px 0px 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.bestseller{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.bs{
+    background-color: rgb(255, 251, 239);
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 70px;
+    margin: 20px 0px 30px 0px;
+    border-radius: 8px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.bs img{
+    width: 90%;
+    border-radius: 8px;
+    border: 3px solid lightpink;
+}
+
+.bs h3{
+    padding-top: 10px;
+    padding-bottom: 5px ;
+    color: rgb(255, 168, 181);
+    
+}
+
+.bs button{
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 0px;
+    background-color: #ffe6eb;
+    color: rgb(252, 118, 145);
+    font-family: cursive;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.st{
+    background-color: rgb(255, 251, 239);
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 70px;
+    margin: 20px 0px 30px 0px;
+    border-radius: 8px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.st img{
+    width: 90%;
+    border-radius: 8px;
+    border: 3px solid lightpink;
+}
+
+.st h4{
+    padding-top: 10px;
+    padding-bottom: 5px ;
+    color: rgb(255, 168, 181);
+}
+
+.st button{
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 0px;
+    background-color: #ffdde5;
+    color: rgb(252, 118, 145);
+    font-family: cursive;
+}
+
+@media screen and (max-width: 950px) {
+    .si-cart p{
+        left: 40%;
+    }
+    .blossom{
+        left: 43%;
+    }
+    .st{
+        width: 22%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .si-cart p{
+        left: 32%;
+    }
+    .blossom{
+        left: 35%;
+    }
+    .st{
+        width: 27%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .si-cart a{
+        font-size: 12px;
+    }
+    .si-cart p{
+        left: 32%;
+    }
+    .blossom{
+        left: 35%;
+    }
+    .slideshow h1{
+        font-size: 55px;
+    }
+    .bs{
+        width: 60% ;
+    }
+    .st{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .si-cart a{
+        font-size: 10px;
+    }
+    .si-cart p{
+        font-size: 13px;
+        left: 35%;
+    }
+    .blossom{
+        left: 35%;
+    }
+    .slideshow h1{
+        font-size: 45px;
+    }
+    .bs{
+        width: 70% ;
+    }
+    .st{
+        width: 45%;
+    }
+    .heading{
+        font-size: 12px;
+    }
+}
+
